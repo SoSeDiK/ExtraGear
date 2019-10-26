@@ -47,12 +47,12 @@ public class ExtraGear extends JavaPlugin {
 		registerArmor("IRON", "MAGNESIUM", "Магниев", SlimefunItems.MAGNESIUM_INGOT, "PROTECTION_ENVIRONMENTAL-2", "DURABILITY-5");
 
 		registerSword(Material.IRON_SWORD, "STEEL", "Стальной", SlimefunItems.STEEL_INGOT, "DAMAGE_ALL-5", "DURABILITY-6");
-		// I'm sorry…
+		// I'm so sorry…
 		ItemStack[] armor = {
-				new CustomItem(Material.IRON_HELMET, "&rСтальной шлем", "PROTECTION_ENVIRONMENTAL-4", "DURABILITY-3"),
-				new CustomItem(Material.IRON_CHESTPLATE, "&rСтальной нагрудник", "PROTECTION_ENVIRONMENTAL-4", "DURABILITY-3"),
-				new CustomItem(Material.IRON_LEGGINGS, "&rСтальные штаны", "PROTECTION_ENVIRONMENTAL-4", "DURABILITY-3"),
-				new CustomItem(Material.IRON_BOOTS, "&rСтальные ботинки", "PROTECTION_ENVIRONMENTAL-4", "DURABILITY-3")
+				new CustomItem(Material.IRON_HELMET, "&rСтальной шлем", new String[] {"PROTECTION_ENVIRONMENTAL-4", "DURABILITY-3"}, 0),
+				new CustomItem(Material.IRON_CHESTPLATE, "&rСтальной нагрудник", new String[] {"PROTECTION_ENVIRONMENTAL-4", "DURABILITY-3"}, 0),
+				new CustomItem(Material.IRON_LEGGINGS, "&rСтальные штаны", new String[] {"PROTECTION_ENVIRONMENTAL-4", "DURABILITY-3"}, 0),
+				new CustomItem(Material.IRON_BOOTS, "&rСтальные ботинки", new String[] {"PROTECTION_ENVIRONMENTAL-4", "DURABILITY-3"}, 0)
 		};
 		SlimefunManager.registerArmorSet(SlimefunItems.STEEL_INGOT, armor, "STEEL", false, false);
 		Slimefun.registerResearch(new Research(++id, "Стальная броня", 5), armor);
